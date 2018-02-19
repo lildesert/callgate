@@ -10,10 +10,11 @@
 
 <script>
 import binanceApi from "../../node_modules/binance/lib/binance.js";
+import config from "../config/DEV.config.js";
 
 const binanceRest = new binanceApi.BinanceRest({
-  key: "",
-  secret: "",
+  key: config.api_key,
+  secret: config.api_secret,
   timeout: 15000, // Optional, defaults to 15000, is the request time out in milliseconds
   recvWindow: 10000, // Optional, defaults to 5000, increase if you're getting timestamp errors
   disableBeautification: false,

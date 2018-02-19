@@ -1,0 +1,22 @@
+{
+  "name": "binance_cors",
+  "version": "1.0.0",
+  "description": "A free, CORS-enabled version of the Binance API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "micro-dev",
+    "start": "micro -p 7000",
+    "deploy": "now"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "binance": "^1.3.3",
+    "micro": "^9.0.0",
+    "micro-cors": "^0.1.0"
+  },
+  "devDependencies": {
+    "micro-dev": "^2.2.0"
+  }
+}
